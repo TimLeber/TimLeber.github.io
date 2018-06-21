@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi,
+
+I am a Data Analyst living in Seattle and this is my blog about data things that catch my interest.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Most of the data that I will be sharing here comes from my personal data tracking, the remainder will be from various public sources.
+
+This blog is in its infancy and I will go back and build this out with more information as I have it.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Timothy.Leber@alumni.webster.edu](mailto:Timothy.Leber@alumni.webster.edu)
