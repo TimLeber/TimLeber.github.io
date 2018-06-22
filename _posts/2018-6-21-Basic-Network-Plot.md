@@ -25,12 +25,12 @@ It consists of three columns, **Node1**, **Node2**, and **_Affiliation_**.  Affi
 in this example.  The Nodes represent the vertices of the network, the dots if you will.  The relationship 
 between the two given nodes is the edge.
 
-| Node1               | Node2               | Affiliation          |
-| ------------------- |:------------------- | :-------------------:|
-|Dr. Rusty Venture    | Hank Venture        | Team Venture         |
-|Dr. Rusty Venture    | Dean Venture        | Team Venture         |
-|Dr. Rusty Venture    | HELPeR              | Team Venture         |
-|Dr. Rusty Venture    | Sgt. Hatred         | Team Venture         |
+| Node1               | Node2                | Affiliation           |
+| ------------------- |:-------------------- | :--------------------:|
+|Dr. Rusty Venture    |: Hank Venture        |: Team Venture         |
+|Dr. Rusty Venture    |: Dean Venture        |: Team Venture         |
+|Dr. Rusty Venture    |: HELPeR              |: Team Venture         |
+|Dr. Rusty Venture    |: Sgt. Hatred         |: Team Venture         |
 
 ## Code
 
