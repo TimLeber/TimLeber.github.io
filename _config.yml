@@ -9,7 +9,7 @@ name: Timothy Leber
 description: Data Analyst from Seattle
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![Head Shot](https://timleber.github.io/images/ProfilePic.jpg)
+avatar: ![Head Shot](http://TimLeber.github.io/images/ProfilePic.jpg)
 
 #
 # Flags below are optional
@@ -21,7 +21,7 @@ footer-links:
   email: Tim@LeberHall.com
   facebook:
   flickr:
-  github: github.com/TimLeber
+  github: TimLeber
   instagram: MeadManTim
   linkedin: https://www.linkedin.com/in/timleber/
   pinterest:
