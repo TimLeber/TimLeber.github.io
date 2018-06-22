@@ -20,6 +20,7 @@ The program has three basic steps:
 ## DATA
 
 The data for this plot is a simple TeamVenture.csv file which can be found in the files section of this blog.  
+
 It consists of three columns, **Node1**, **Node2**, and **_Affiliation_**.  Affiliation is not used 
 in this example.  The Nodes represent the vertices of the network, the dots if you will.  The relationship 
 between the two given nodes is the edge.
