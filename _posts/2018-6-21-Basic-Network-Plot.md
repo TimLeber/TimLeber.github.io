@@ -26,11 +26,11 @@ in this example.  The Nodes represent the vertices of the network, the dots if y
 between the two given nodes is the edge.
 
 | Node1               | Node2                | Affiliation           |
-| ------------------- |:-------------------- | :--------------------:|
-|Dr. Rusty Venture    |: Hank Venture        |: Team Venture         |
-|Dr. Rusty Venture    |: Dean Venture        |: Team Venture         |
-|Dr. Rusty Venture    |: HELPeR              |: Team Venture         |
-|Dr. Rusty Venture    |: Sgt. Hatred         |: Team Venture         |
+|:------------------- |:--------------------:| ---------------------:|
+|Dr. Rusty Venture    |Hank Venture          |Team Venture           |
+|Dr. Rusty Venture    |Dean Venture          |Team Venture           |
+|Dr. Rusty Venture    |HELPeR                |Team Venture           |
+|Dr. Rusty Venture    |Sgt. Hatred           |Team Venture           |
 
 ## Code
 
