@@ -44,3 +44,44 @@ At this point I ran an initial regression model to see how well everything fit. 
 ![First Model](/images/20180716-regression-model-1.PNG)
 
 A couple of notes about the highlighted variables in the model.  The first is the OTHERCOST variable with a P-value of 0.05917.  This value exceeds the Alpha for the model of 0.05.  Which means that this variable is not statistically significant to the model and will be discarded.  The other highlighted variable is REGION1, with a P-value of 0.76406.  This also exceeds the Alpha for the model.  We need to remember that this is a categorical variable that shows relevance to the base category, not the model.  Therefore the interpretation is that the unit values in Region 1 are not statistically different than Region 4, the reference region.
+
+The next variable I looked at was the median income of the area.  I ran descriptive statistics of both the raw data and a natural log transform of the data.  Once more the transformed version fit a bell curve much better than the raw version of the data did.  The fair market rent and median mortgage cost also followed that pattern.
+
+The final thing I looked at was the age of the unit.  To find that I took the year the home was built and subtracted it from 2013, which is the year the data represents.  One would expect that to be a major factor in the price of a home.  However the raw data is decidedly not a bell curve.  I tried to transform the data using a natural log, but that didn't work.  The reason is that the data contains zero values, which throw an error in the formula.  The next idea was to means center the data.  This is done by taking the age of the unit and subtracting the average age of the unit population.  This is commonly done for things like height and body mass.  The fit to the curve did not improve at all with the transformation.
+
+Raw Data
+![Unit Age Raw](/images/20180716-unitage-histogram.PNG)
+
+Transformed Data
+![Unit Mean Centered](/images/20180716-unitage-mc-histogram.PNG)
+
+The result of all this is that the unit age was discarded from the model.  There are probably ways to transform the data into something more suitable for a regression model, but I am not familiar enough with the process to know what they are.
+
+## Final Model
+
+After all of this the variables used in the model to estimate housing prices are as follows:
+
+1. **URBAN** - is the unit in a central region or not
+2. **REGION1** - is the unit in Region 1 or not, Region 4 being the default
+3. **REGION2** - is the unit in Region 2 or not, Region 4 being the default
+4. **REGION3** - is the unit in Region 3 or not, Region 4 being the default
+5. **_LMED(LN)_** - the natural log of the median income of the area
+6. **_FMR(LN)_** - the natural log of the fair market rent for the unit
+7. **BEDRMS** - the number of bedrooms in the unit
+8. **OCCUPIED** - is the unit occupied or not
+9. **ROOMS** - the number of rooms in the unit
+10. **ADEQ** - is the unit adequate or not
+11. **UTILITY** - the monthly utility costs of the unit
+12. **_COSTMED(LN)_** - the natural log of the median monthly mortgage cost of the unit
+
+I ran the regression model again and came up with the following results.
+
+![Final Regression Model](/images/20180716-regression-model-final.PNG)
+
+As you can see this model has an R Square value of 0.97, which is a much better fit that the first run of the model.  Also all of the variables become significant and there is now a statistical difference in home values between Region 1 and Region 4.
+
+In the end I ran a couple of iterations of the model with Unit Age trying to see if the model would work with it, but the accuracy was not improved.  I knew that from the work I did trying to transform it, but I just thought that it **SHOULD** make a difference.
+
+## Conclusion
+
+Excel can run a regression model for you.  That is what generated the ones you see here.  The important thing to know is what data should be *included* in the model to make sure it is relevant.  It is easy to take a bunch of data and roughly munge it together.  To make a truly useful model you need to think about each variable you wish to include, does it make sense in the model, does it conform to a bell curve, is it statistically relevant to the final output.  Some of you variables may need transformation to better fit the model, while others that you think are important, may not be relevant at all.  Building a model is an iterative process.  You must examine the results of the model to see if they make sense and make adjustments if needed.
