@@ -44,12 +44,12 @@ The better your variables fit into a bell curve, the better the model will be.  
 
 The first thing I did was check the unit value variable to see how well it fit a bell curve.  I went ahead and created a natural log version of the variable to do the comparison with.  Here are the summary statistics from Excel.
 
-![Summary Statistics for unit value](/images/20180716-Value-Descriptive-Statistics.jpg)
+![Summary Statistics for unit value](TimLeber.github.io/images/20180716-Value-Descriptive-Statistics.jpg)
 
 As you can see the data has a very wide swing of values in the provided data.  However when the data is transformed with a log function, the spread becomes much more compact.  You can really see this effect when you render 
 a histogram in Excel with a chart output.
 
-![Histogram of unit value](/images/20180716-Value-Histogram.jpg)
+![Histogram of unit value](TimLeber.github.io/images/20180716-Value-Histogram.jpg)
 
-![Histogram of unit value - log](/images/20180716-ValueLN-Histogram.jpg)
+![Histogram of unit value - log](TimLeber.github.io/images/20180716-ValueLN-Histogram.jpg)
 
