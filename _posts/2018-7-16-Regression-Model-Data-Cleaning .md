@@ -13,7 +13,7 @@ Several variables could be dismissed out of hand.  The age of the head of househ
 
 In addition to the numerical data there are several categorical variables that can be examined in the model.  The first of these is the type of metropolitan area the unit is located in.  My data key only indicates if the area is in the urban core or elsewhere.  Normally one would want to compare urban, suburban, and other areas.  However my key did not indicate which category represents Suburban areas.  However since the professor specifically called out that categorical variable I decided to include it.
 
-Another categorical variable is the region of the country where the unit is located.  My data key indicates that these categories represent census regions of the United States.  In this case the Northeast, the Midwest, the South, and the West regions.  Thinking about the data I decided that the default category should be the West region.  I based that decision on a couple of factors.  First the real estate prices on the West Coast are in an period of sustained growth and are higher than other regions of the country.  Secondly, I live in that region and wanted to compare housing prices here against the other regions.  Finally it doesn't really matter which region you make the baseline.  You just have to pick one and remember which is it is.
+Another categorical variable is the region of the country where the unit is located.  My data key indicates that these categories represent census regions of the United States.  In this case the Northeast, the Midwest, the South, and the West regions.  Thinking about the data I decided that the default category should be the West region.  I based that decision on a couple of factors.  First the real estate prices on the West Coast are in a period of sustained growth and are higher than other regions of the country.  Secondly, I live in that region and wanted to compare housing prices here against the other regions.  Finally it doesn't really matter which region you make the baseline.  You just have to pick one and remember which is it is.
 
 There is also a categorical variable that indicates if the unit is vacant or not.  This was set to a dummy variable that where a one indicates that the unit is occupied, and zero otherwise.
 
@@ -49,10 +49,8 @@ The next variable I looked at was the median income of the area.  I ran descript
 
 The final thing I looked at was the age of the unit.  To find that I took the year the home was built and subtracted it from 2013, which is the year the data represents.  One would expect that to be a major factor in the price of a home.  However the raw data is decidedly not a bell curve.  I tried to transform the data using a natural log, but that didn't work.  The reason is that the data contains zero values, which throw an error in the formula.  The next idea was to means center the data.  This is done by taking the age of the unit and subtracting the average age of the unit population.  This is commonly done for things like height and body mass.  The fit to the curve did not improve at all with the transformation.
 
-Raw Data
 ![Unit Age Raw](/images/20180716-unitage-histogram.PNG)
 
-Transformed Data
 ![Unit Mean Centered](/images/20180716-unitage-mc-histogram.PNG)
 
 The result of all this is that the unit age was discarded from the model.  There are probably ways to transform the data into something more suitable for a regression model, but I am not familiar enough with the process to know what they are.
@@ -84,4 +82,4 @@ In the end I ran a couple of iterations of the model with Unit Age trying to see
 
 ## Conclusion
 
-Excel can run a regression model for you.  That is what generated the ones you see here.  The important thing to know is what data should be *included* in the model to make sure it is relevant.  It is easy to take a bunch of data and roughly munge it together.  To make a truly useful model you need to think about each variable you wish to include, does it make sense in the model, does it conform to a bell curve, is it statistically relevant to the final output.  Some of you variables may need transformation to better fit the model, while others that you think are important, may not be relevant at all.  Building a model is an iterative process.  You must examine the results of the model to see if they make sense and make adjustments if needed.
+Excel can run a regression model for you.  That is what generated the ones you see here.  The important thing to know is what data should be *included* in the model to make sure it is relevant.  It is easy to take a bunch of data and roughly munge it together.  To make a truly useful model you need to think about each variable you wish to include, does it make sense in the model, does it conform to a bell curve, and is it statistically relevant to the final output.  Some of you variables may need transformation to better fit the model, while others that you think are important, may not be relevant at all.  Building a model is an iterative process.  You must examine the results of the model to see if they make sense and make adjustments if needed.
