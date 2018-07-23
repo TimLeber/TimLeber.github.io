@@ -11,11 +11,11 @@ I am going to walk through each of the variables and how to understand what they
 
 Here is the output from the Excel regression model that we developed last time.
 
-![Regression Model](/images/20180323/20180723-regression-model-final.PNG)
+![Regression Model](/images/20180723-regression-model-final.PNG)
 
 We can create an equation of this model to use for making predictions are follows.
 
-![Regression formula](/images/20180323/20180723-regression-model-formula.PNG)
+![Regression formula](/images/20180723-regression-model-formula.PNG)
 
 ## A Few Notes About Variables
 
@@ -51,17 +51,17 @@ Variable of Interest **VALUE(LN)** returns the natural log of a single family ho
 
 By substituting the values from the model the formula becomes as follows.
 
-![Regression formula](/images/20180323/20180723-regression-model-formula-substitution.PNG)
+![Regression formula](/images/20180723-regression-model-formula-substitution.PNG)
 
 A caution about how to interpret these results is that they are not all at the same power.  Some of them can be read as direct percentages and other can not.  The variables that have been transformed into natual logs can be read directly as percentages.  All other variables must be multiplied by 100 to get their percentage impact in the model.  Here is how it works in this model.
 
-![Regression formula](/images/20180323/20180723-regression-model-formula-impact.PNG)
+![Regression formula](/images/20180723-regression-model-formula-impact.PNG)
 
 ## Sample Calculations
 
 To see how all this works to get actual predictions out of the model I have run a few sample calculations using data I pulled from the sample data.  The categorical variables have been assigned a flag for the category we are testing and I have selected an average value for most of the rest.
 
-![Regression formula](/images/20180323/20180723-regression-model-calculations.PNG)
+![Regression formula](/images/20180723-regression-model-calculations.PNG)
 
 ## Conclusion
 
