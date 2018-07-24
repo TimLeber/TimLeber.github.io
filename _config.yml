@@ -6,10 +6,10 @@
 name: Timothy Leber
 
 # Short bio or description (displayed in the header)
-description: Data Analyst from Seattle
+description: Enabling data driven decision making in an ever changing world
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![Profile Pic](/images/profilepic.PNG)
+avatar: /images/profilepic.PNG
 
 #
 # Flags below are optional
@@ -18,7 +18,7 @@ avatar: ![Profile Pic](/images/profilepic.PNG)
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: Tim@LeberHall.com
+  email: Timothy.Leber@alumni.webster.edu
   facebook:
   flickr:
   github: TimLeber
@@ -26,7 +26,7 @@ footer-links:
   linkedin: https://www.linkedin.com/in/timleber/
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: MeadManTim
+  twitter: @tim_leber
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
