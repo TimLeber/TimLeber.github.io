@@ -3,7 +3,7 @@ layout: post
 title: Regression Model Part 3 - Using The Model For Prediction
 ---
 
-This model is a pretty good predictor of the value of a single family housing unit in 2013.  But it should be, we are using 2013 data to predict 2013 prices.  This is tantamount to a batter calling his own strike zone.  What we need to do is use data to predict **_FUTURE_** prices.  What we are doing this time is using the 2011 data to predict the value of the same unit in 2013.
+This model is a pretty good predictor of the value of a single family housing unit in 2013.  But it should be, we are using 2013 data to predict 2013 prices.  This is tantamount to a batter calling his own strike zone.  What we need to do is use data to predict **FUTURE** prices.  What we are doing this time is using the 2011 data to predict the value of the same unit in 2013.
 
 ## Data Cleaning
 
