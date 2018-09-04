@@ -95,7 +95,7 @@ The first block of code is just setting up some basic options and parameters for
 
 I have also created a user defined function called _recode_phenom_.  This will changes codes that an API returns and translate them into user friendly text.  It is not used in this example, but I didn't want to leave it unexplained.  There will be more details in the post that is relevant.
 
-Now we get to the meat of today's post.  The line ```r moon_call <- paste0("http://api.usno.navy.mil/moon/phase?date=",Q_date,"&nump=48");``` creates the text for the API call.  We pass in _Q_date_ which tells it when we want the data returned to start from, and the final parameter tells the system how many lunar phases that we want.
+Now we get to the meat of today's post.  The line ``` r moon_call <- paste0("http://api.usno.navy.mil/moon/phase?date=",Q_date,"&nump=48");``` creates the text for the API call.  We pass in _Q_date_ which tells it when we want the data returned to start from, and the final parameter tells the system how many lunar phases that we want.
 
 The next line then uses *jsonlite* to make the API call and it holds the returned data as a list.
 
@@ -103,7 +103,7 @@ The next line then uses *jsonlite* to make the API call and it holds the returne
 
 We only want the data about the moon phases so I created a new dataframe called *moon_phases* and filled it with the phasedata part of the json.
 
-```r moon_phases <- moon_json$phasedata; ```
+``` r moon_phases <- moon_json$phasedata; ```
 
 Once I have that filled I have a little clean-up work to do.  The first thing is that the dates come back as text, we want those to be date values so I convert them from text in the 'YYYY mon dd' format to a date field.  The next thing I want to do is find the next Saturday after the lunar phase.  I do this in three steps.
 
