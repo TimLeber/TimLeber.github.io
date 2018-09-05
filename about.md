@@ -36,4 +36,4 @@ This blog is in its infancy and I hope to update it weekly with interesting code
 
 ### Contact me
 
-[Timothy.Leber@alumni.webster.edu](mailto:Timothy.Leber@alumni.webster.edu)
+[TimLeberJobs@gmail.com](mailto:TimLeberJobs@gmail.com)
