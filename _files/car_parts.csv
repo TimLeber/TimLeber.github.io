@@ -1,0 +1,18 @@
+"","Part_ID","Parent_ID","Part","Description","Type","Quanitity"
+"1",1,0,"Car","Assembled Car","Final assembly",0
+"2",4,1,"Engine","Car Engine","Engine",0
+"3",5,1,"Body","Car Body","Body",0
+"4",6,1,"Interior","Car Interior","Interior",0
+"5",7,1,"Tires","Car Tires","Tires",4
+"6",8,4,"Block","Car engine block","Engine part",1
+"7",9,4,"Radiator","Car radiator","Engine part",1
+"8",10,4,"Transmission","Car transmission","Engine part",1
+"9",11,5,"Hood","Car Hood","Body part",1
+"10",12,5,"Trunk Plate","Car trunk plate","Body part",1
+"11",13,5,"RF Fender","Car Right Front Fender","Body part",1
+"12",14,5,"LF Fender","Car Left Front Fender","Body part",1
+"13",15,5,"RR Fender","Car Right Rear Fender","Body part",1
+"14",16,5,"LR Fender","Car Left Rear Fender","Body part",1
+"15",17,6,"Driver Seat","Car Driver's Seat","Interior Part",1
+"16",18,6,"Passenger Seat","Car Passenger Seat","Interior Part",1
+"17",19,6,"Rear Seat","Car Rear Seat","Interior Part",1

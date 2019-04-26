@@ -1,0 +1,16 @@
+"","Part_ID","Parent_ID","Part","Description","Type","Quanitity"
+"1",2,0,"Truck","Assembled Truck","Final assembly",0
+"2",20,2,"Engine","Truck Engine","Engine",0
+"3",21,2,"Body","Truck Body","Body",0
+"4",22,2,"Interior","Truck Interior","Interior",0
+"5",23,2,"Tires","Truck Tires","Tires",4
+"6",24,20,"Block","Truck engine block","Engine part",1
+"7",25,20,"Radiator","Truck radiator","Engine part",1
+"8",26,20,"Transmission","Truck transmission","Engine part",1
+"9",27,21,"Hood","Truck Hood","Body part",1
+"10",28,21,"Trunk Plate","Truck trunk plate","Body part",1
+"11",29,21,"RF Fender","Truck Right Front Fender","Body part",1
+"12",30,21,"LF Fender","Truck Left Front Fender","Body part",1
+"13",31,21,"RR Fender","Truck Right Rear Fender","Body part",1
+"14",32,21,"LR Fender","Truck Left Rear Fender","Body part",1
+"15",33,22,"Truck Seat","Truck Seat","Interior Part",1
